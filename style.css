@@ -20,7 +20,26 @@
             margin: 0;
             font-size: 2.5em;
             font-weight: bold;
+            color: white;
         }
+        header {
+            background: linear-gradient(135deg, #6200ea, #03dac5);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        header a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 2em;
+            font-weight: bold;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        /* header a:hover {
+            color: #ffcc00;
+        } */
         .follow-section {
             margin: 0;
         }
