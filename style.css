@@ -1,87 +1,153 @@
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #beecca;
-            color: #e0e0e0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #beecca;
+        color: #e0e0e0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        background: linear-gradient(135deg, #6200ea, #03dac5);
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-left: 20px;
+        transition: color 0.3s ease;
+    }
+
+    .follow-section {
+        margin: 0;
+    }
+
+    .follow-section a {
+        text-decoration: none;
+        background: linear-gradient(135deg, #03dac5, #6200ea);
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 1.1em;
+        font-weight: bold;
+        transition: background 0.3s ease;
+    }
+
+    .follow-section a:hover {
+        background: linear-gradient(135deg, #6200ea, #03dac5);
+    }
+
+    .content {
+        padding: 20px;
+        max-width: 900px;
+        margin: 20px auto;
+        background: linear-gradient(135deg, #6200ea, #03dac5);
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        flex: 1;
+    }
+
+    .content h2 {
+        text-align: center;
+        color: #03dac5;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .content p {
+        line-height: 1.6;
+        text-align: justify;
+        font-size: 1em;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #03dac5;
+        color: black;
+        font-size: 0.9em;
+        position: sticky;
+        bottom: 0;
+    }
+
+    /* Responsive Design for Mobile Devices */
+    @media only screen and (max-width: 768px) {
         header {
-            background: linear-gradient(135deg, #6200ea, #03dac5);
-            color: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 15px;
         }
-        /* header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            font-weight: bold;
-            color: white;
-        } */
-        /* header {
-            background: linear-gradient(135deg, #6200ea, #03dac5);
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            padding: 20px;
-        } */
+
         header a {
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-left: 20px;
-            transition: color 0.3s ease;
+            font-size: 1.2em;
+            margin-left: 0;
+            margin-bottom: 10px;
         }
-        /* header a:hover {
-            color: #ffcc00;
-        } */
+
         .follow-section {
-            margin: 0;
+            width: 100%;
+            text-align: left;
         }
+
         .follow-section a {
-            text-decoration: none;
-            background: linear-gradient(135deg, #03dac5, #6200ea);
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 1.1em;
-            font-weight: bold;
-            transition: background 0.3s ease;
+            font-size: 1em;
+            padding: 10px 15px;
         }
-        .follow-section a:hover {
-            background: linear-gradient(135deg, #6200ea, #03dac5);
-        }
+
         .content {
-            padding: 30px;
-            max-width: 900px;
-            max-height: 400px;
-            margin: auto;
-            background: linear-gradient(135deg, #6200ea, #03dac5);
-            border-radius: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            flex: 1;
+            padding: 15px;
+            border-radius: 15px;
         }
+
         .content h2 {
-            text-align: center;
-            color: #03dac5;
-            font-size: 2em;
-            margin-bottom: 20px;
+            font-size: 1.5em;
         }
+
         .content p {
-            line-height: 1.8;
-            text-align: justify;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #03dac5;
-            color: black;
             font-size: 0.9em;
-            position: sticky;
-            bottom: 0;
         }
+
+        footer {
+            font-size: 0.8em;
+            padding: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        header a {
+            font-size: 1em;
+        }
+
+        .follow-section a {
+            font-size: 0.9em;
+            padding: 8px 12px;
+        }
+
+        .content {
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            font-size: 1.2em;
+        }
+
+        .content p {
+            font-size: 0.8em;
+        }
+
+        footer {
+            font-size: 0.7em;
+        }
+    }
+
